@@ -78,41 +78,49 @@ func SetTraceWay(w io.Writer) {
 // format print good log
 func Goodf(format string, v ...any) {
 	goodCat.Printf("[Good] "+format+end, v...)
+	Tracef(format, v...)
 }
 
 // print line good log
 func Goodln(v ...any) {
 	goodCat.Println("[Good] "+fmt.Sprint(v...), end)
+	Traceln(v...)
 }
 
 // format print info log
 func Infof(format string, v ...any) {
 	infoCat.Printf("[Info] "+format+end, v...)
+	Tracef(format, v...)
 }
 
 // print line info log
 func Infoln(v ...any) {
 	infoCat.Println("[Info] "+fmt.Sprint(v...), end)
+	Traceln(v...)
 }
 
 // format print bad log
 func Badf(format string, v ...any) {
 	badCat.Printf("[Bad] "+format+end, v...)
+	Tracef(format, v...)
 }
 
 // print line bad log
 func Badln(v ...any) {
 	badCat.Println("[Bad] "+fmt.Sprint(v...), end)
+	Traceln(v...)
 }
 
 // format print warn log
 func Warnf(format string, v ...any) {
 	warnCat.Printf("[Warn] "+format+end, v...)
+	Tracef(format, v...)
 }
 
 // print line warn log
 func Warnln(v ...any) {
 	warnCat.Println("[Warn] "+fmt.Sprint(v...), end)
+	Traceln(v...)
 }
 
 // format print trace log
