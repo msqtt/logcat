@@ -46,7 +46,7 @@ func CloseToday(prefix string) error {
 		prefix = "."
 	}
 	if todaylogfile[prefix] == nil {
-		return errors.New("You never saved logs today.")
+		return errors.New("You donot saved that log today.")
 	}
 	return todaylogfile[prefix].Close()
 }
