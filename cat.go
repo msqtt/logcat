@@ -1,5 +1,5 @@
 // logcat is a simple logger with color texts in terminal,
-// which is just be encapsulated simplely from golang's log package.
+// which just encapsulate golang's log package.
 // and it's eazier for me to use. :p
 package logcat
 
